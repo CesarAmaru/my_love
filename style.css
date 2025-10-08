@@ -14,8 +14,7 @@ body {
     min-height: 100svh;
     background-color: #0a0a1a;
     color: #f0f0f0;
-    overflow: hidden;
-    padding: 20px; /* Adiciona um respiro para telas menores */
+    padding: 20px; 
 }
 
 /* Tela Inicial */
@@ -228,22 +227,22 @@ body {
 /* Responsividade */
 
 @media (max-width: 700px) {
+    body {
+        padding: 0;
+        align-items: flex-start;
+    }
+
     .card {
         max-width: 100%;
         padding: 20px 15px; 
-    }
+        
     
-    body {
-        padding: 10px; 
-        align-items: flex-start; 
-        padding-top: 20px;
+        height: 100svh;           
+        border-radius: 0;         
+        overflow-y: auto;        
+        padding-bottom: 50px;    
     }
 
-    .card {
-        padding: 20px 15px; 
-    }
-
-    
     .carousel-slide img {
         aspect-ratio: 9 / 16; 
         max-height: none; 
@@ -254,19 +253,8 @@ body {
         padding: 0 5px;
     }
 
-    .quote {
-        font-size: 1.5rem;
-    }
-
-    #counter {
-        font-size: 1rem;
-    }
-
-    .message {
-        font-size: 0.85rem;
-    }
-
-    .bottom-quote {
-        font-size: 1.2rem;
-    }
+    .quote { font-size: 1.5rem; }
+    #counter { font-size: 1rem; }
+    .message { font-size: 0.85rem; }
+    .bottom-quote { font-size: 1.2rem; }
 }
