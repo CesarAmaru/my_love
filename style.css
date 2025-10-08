@@ -4,17 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
+
 
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100svh;
     background-color: #0a0a1a;
     color: #f0f0f0;
     overflow: hidden;
