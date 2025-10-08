@@ -227,7 +227,7 @@ body {
 }
 /* Responsividade */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     /* Remove margens e padding do body para ocupar toda a tela */
     html, body {
         margin: 0;
