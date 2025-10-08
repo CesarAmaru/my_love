@@ -228,28 +228,37 @@ body {
 /* Responsividade */
 
 @media (max-width: 700px) {
-    body {
+    /* Remove margens e padding do body para ocupar toda a tela */
+    html, body {
+        margin: 0;
         padding: 0;
-        align-items: flex-start;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .card {
-        max-width: 100%;
-        padding: 20px 15px; 
-        
-    
-        height: 100svh;           
-        border-radius: 0;         
-        overflow-y: auto;        
-        padding-bottom: 50px;    
+        width: 100%;
+        height: 100dvh;
+        border-radius: 0;
+        padding: 20px 15px 60px; 
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
     }
 
+    /* Imagens mais verticais */
     .carousel-slide img {
+        width: 100%;
+        height: auto;
         aspect-ratio: 9 / 16; 
-        max-height: none; 
         object-fit: cover;
+        border-radius: 0;
     }
-    
+
+    /* Ajustes de espaçamento e legibilidade */
     .text-content {
         padding: 0 5px;
     }
