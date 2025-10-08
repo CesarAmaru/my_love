@@ -240,7 +240,7 @@ body {
 
     
     .carousel-slide img {
-        aspect-ratio: 3 / 4; 
+        aspect-ratio: 9 / 16; 
         max-height: none; 
         object-fit: cover;
     }
