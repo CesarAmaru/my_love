@@ -264,12 +264,11 @@ body {
         margin: 0;
         padding: 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        display: block;
         min-height: 100vh;
-        height: auto;
+        height: 100vh;
         overflow: hidden;
+        position: fixed;
     }
     
     /* Tela inicial adaptada */
@@ -293,12 +292,14 @@ body {
     
     /* Card principal otimizado para telas altas */
     .card {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        min-height: 100vh;
-        height: auto;
+        height: 100vh;
         border-radius: 0;
         padding: 20px 18px 60px;
-        overflow-y: scroll;
+        overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         display: block;
